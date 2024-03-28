@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
+import { FaCheck } from 'react-icons/fa';
 
 function App() {
   const [length, setLength] = useState(14);
@@ -31,7 +32,6 @@ function App() {
 
       setIsCopied((prevState) => !prevState);
       setTimeout(() => setIsCopied((prevState) => !prevState), 2000);
-      // console.log('Password copied to clipboard!');
     } catch (err) {
       // console.error('ERROR: ', err);
     }
@@ -80,10 +80,11 @@ function App() {
         />
         <button
           type="button"
-          className="bg-blue-600 py-2 px-4 text-white rounded-r-xl outline-none hover:bg-blue-700"
+          className="bg-blue-600 w-16 text-white rounded-r-xl outline-none hover:bg-blue-700 flex justify-center items-center"
           onClick={handleCopyClick}
+          disabled={isCopied}
         >
-          {!isCopied ? 'Copy' : `\u{2713}`}
+          {!isCopied ? 'Copy' : <FaCheck />}
         </button>
       </div>
       <div className="flex justify-start align-middle mt-2 gap-5">
