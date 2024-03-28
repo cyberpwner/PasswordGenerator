@@ -59,10 +59,10 @@ function App() {
   return (
     <form
       action=""
-      className="w-2/4 rounded-md bg-slate-300 mx-auto my-5 p-8 flex flex-col justify-items-center"
+      className="w-2/4 rounded-md bg-slate-500 mx-auto my-5 p-8 flex flex-col justify-items-center"
     >
       <header>
-        <h1 className="text-center text-xl font-semibold mb-3">
+        <h1 className="text-center text-xl font-semibold mb-3 text-white">
           Password Generator
         </h1>
       </header>
