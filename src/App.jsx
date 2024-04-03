@@ -80,7 +80,7 @@ function App() {
         />
         <button
           type="button"
-          className="bg-blue-600 w-16 text-white rounded-r-xl outline-none hover:bg-blue-700 flex justify-center items-center"
+          className="bg-blue-600 p-2 w-16 text-white rounded-r-xl outline-none hover:bg-blue-700 flex justify-center items-center"
           onClick={handleCopyClick}
           disabled={isCopied}
         >
