@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  margin: 0;
+}
+
+#root {
+  height: 100vh;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  background-image: url(https://images.pexels.com/photos/50594/sea-bay-waterfront-beach-50594.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+  background-size: cover;
+}

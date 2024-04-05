@@ -59,7 +59,7 @@ function App() {
   return (
     <form
       action=""
-      className="w-2/4 rounded-md bg-slate-500 mx-auto my-5 p-8 flex flex-col justify-items-center"
+      className="w-2/4 rounded-md bg-transparent mx-auto p-8 flex flex-col justify-items-center"
     >
       <header>
         <h1 className="text-center text-xl font-semibold mb-3 text-white">
@@ -75,7 +75,7 @@ function App() {
           value={password}
           onChange={handlePasswordChange}
           readOnly
-          className="py-2 px-4 rounded-l-xl w-full outline-none"
+          className="py-2 px-4 rounded-l-xl w-full outline-none text-slate-700"
           ref={inputPassRef}
         />
         <button
@@ -99,12 +99,12 @@ function App() {
             onChange={handleLengthChange}
             className="cursor-pointer"
           />
-          <label htmlFor="length" className="ml-2">
+          <label htmlFor="length" className="ml-2 text-white">
             Length: {length}
           </label>
         </div>
         <div className="flex items-center">
-          <label htmlFor="digits">
+          <label htmlFor="digits" className="ml-2 text-white">
             <input
               type="checkbox"
               name="digits"
@@ -117,7 +117,7 @@ function App() {
           </label>
         </div>
         <div className="flex items-center">
-          <label htmlFor="specialChars">
+          <label htmlFor="specialChars" className="ml-2 text-white">
             <input
               type="checkbox"
               name="specialChars"
